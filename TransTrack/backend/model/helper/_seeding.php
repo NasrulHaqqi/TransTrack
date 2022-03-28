@@ -1,7 +1,7 @@
 <?php
 include_once 'connection.php';
 
-class Migration {
+class Seeding {
     public function __construct() {
         $this->db = new Connection();
         $this->db = $this->db->connect();
@@ -22,5 +22,5 @@ class Migration {
     }
 }
 
-$migrate = new Migration();
-$migrate->mulai();
+$seed = new Seeding();
+$seed->mulai();
